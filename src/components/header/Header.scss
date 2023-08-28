@@ -22,9 +22,13 @@
 
 .header {
   background-color: $lightBackground1;
-  max-width: 100%;
+  width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .header ul {

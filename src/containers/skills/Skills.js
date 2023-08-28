@@ -15,7 +15,7 @@ export default function Skills() {
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
-        <Fade left duration={1000}>
+        {/* <Fade left duration={1000}>
           <div className="skills-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={codingPerson} />
@@ -26,7 +26,13 @@ export default function Skills() {
               ></img>
             )}
           </div>
-        </Fade>
+          <div className="skills-image-div">
+            <img
+                  alt="Rohith Working"
+                  src={require("../../assets/images/rohith_working.gif")}
+            ></img>
+          </div>
+        </Fade> */}
         <Fade right duration={1000}>
           <div className="skills-text-div">
             <h1

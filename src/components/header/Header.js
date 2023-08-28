@@ -6,6 +6,7 @@ import StyleContext from "../../contexts/StyleContext";
 import {
   greeting,
   workExperiences,
+  educationInfo,
   skillsSection,
   openSource,
   blogSection,
@@ -16,6 +17,7 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
+  const viewEducation = educationInfo.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
@@ -39,14 +41,19 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
+          {viewEducation && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#education">Education</a>
             </li>
           )}
           {viewExperience && (
             <li>
               <a href="#experience">Work Experiences</a>
+            </li>
+          )}
+          {viewSkills && (
+            <li>
+              <a href="#skills">Skills</a>
             </li>
           )}
           {viewOpenSource && (

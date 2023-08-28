@@ -29,3 +29,21 @@
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
 }
+
+.software-skill-inline img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .software-skill-inline img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.category-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
