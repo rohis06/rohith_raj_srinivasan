@@ -20,6 +20,7 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
+import AcademicExperience from "./academicExperience/academicExperience";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -53,11 +54,12 @@ const Main = () => {
             <Header />
             <Greeting />
             <Education />
-            <WorkExperience />
             <Skills />
+            <WorkExperience />
+            <AcademicExperience />
+            <Projects />
             {/* <StackProgress /> */}
-            {/* <Projects /> */}
-            {/* <StartupProject /> */}
+            <StartupProject />
             <Achievement />
             {/* <Blogs />
             <Talks />

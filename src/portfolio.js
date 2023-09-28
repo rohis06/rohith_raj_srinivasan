@@ -95,19 +95,17 @@ https://fontawesome.com/icons?d=gallery */
         { skillName: "Python", fileName: "python" },
         { skillName: "C", fileName: "c" },
         { skillName: "JavaScript (ES6)", fileName: "javascript" },
-        { skillName: "HTML5", fileName: "html" },
-        { skillName: "CSS", fileName: "css" },
         { skillName: "SQL", fileName: "mysql" },
       ],
     },
     {
       category: "Web Technologies",
       skills: [
-        { skillName: "HTML5", fileName: "html" },
-        { skillName: "CSS", fileName: "css" },
-        { skillName: "SQL", fileName: "mysql" },
         { skillName: "React.js", fileName: "react" },
         { skillName: "Node.js", fileName: "nodejs" },
+        { skillName: "HTML5", fileName: "html" },
+        { skillName: "CSS", fileName: "css" },
+        { skillName: "Spring MVC", fileName: "spring-icon" },
       ],
     },
     {
@@ -117,8 +115,19 @@ https://fontawesome.com/icons?d=gallery */
         { skillName: "NumPy", fileName: "numpy" },
         { skillName: "Pandas", fileName: "pandas-icon" },
         { skillName: "Matplotlib", fileName: "matplotlib-icon" },
+        { skillName: "Jupyter", fileName: "jupyter" },
       ],
     },
+    {
+      category: "Other Technologies & Tools",
+      skills: [
+        { skillName: "Unix/Linux", fileName: "linux-tux" },
+        { skillName: "Git", fileName: "git-icon" },
+        { skillName: "GitHub", fileName: "github-octocat" },
+        { skillName: "JIRA", fileName: "jira" },
+        { skillName: "VS Code", fileName: "visual-studio-code" },
+      ]
+    }
     // Add more categories and skills as needed
   ],
   display: true // Set false to hide this section, defaults to true
@@ -134,7 +143,7 @@ const educationInfo = {
       logo: require("./assets/images/UCD_logo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "September 2022 - March 2024 (Expected)",
-      desc: "CGPA: 4.0 / 4.0",
+      desc: "GPA: 4.0 / 4.0",
       descBullets: [
         "Coursework: Design & Analysis of Algorithms, Machine Learning & Discovery, Distributed Database Systems, Software Engineering, Computational Storytelling using AI"
       ]
@@ -144,8 +153,8 @@ const educationInfo = {
       logo: require("./assets/images/rv_logo.png"),
       subHeader: "Bachelor of Engineering in Computer Science and Engineering",
       duration: "August 2016 - August 2020",
-      desc: "CGPA: 9.36 / 10.00",
-      descBullets: ["Relevant Coursework: Data Structures and Algorithms, Machine Learning, Artificial Neural Networks, Database Design, Big Data Analytics, Object Oriented Programming, Operating Systems, Software Engineering, Linear Algebra, Statistics"]
+      desc: "GPA: 3.92/4.00 (9.36 / 10.00)",
+      descBullets: ["Coursework: Data Structures, Design and Analysis of Algorithms, Machine Learning, Artificial Neural Networks, Database Design, Big Data Analytics, Object Oriented Programming, Operating Systems, Software Engineering, Computer Networks, Web Programming, Linux Internals, Parallel Architecture and Distributed Programming, Cryptography and Network Security, Linear Algebra, Statistics, Graph and Probability Theory"]
     }
   ]
 };
@@ -211,6 +220,40 @@ const workExperiences = {
   ]
 };
 
+const academicExperiences = {
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "Teaching Assistant - Summer 2023",
+      company: "University of California, Davis",
+      companylogo: require("./assets/images/UCD_logo.png"),
+      date: "August 2023 – Present",
+      desc: "Serving as a Teaching Assistant for ECS 122A - Algorithm Design and Analysis under Prof. Yelena Frid. In this role, my responsibilities are:",
+      descBullets: [
+        "Lead engaging discussions for a diverse group of 80+ students, facilitating an interactive learning environment.",
+        "Proctoring and meticulously grading exams to ensure accurate evaluation of student performance.",
+        "Evaluating and providing constructive feedback on student assignments.",
+        "Conducting regular office hours, offering one-on-one support and guidance to students seeking further clarification.",
+        "Collaborating with the professor to enhance course materials and update instructional content for optimal student engagement."
+      ]
+    },
+    {
+      role: "Teaching Assistant - Spring 2023",
+      company: "University of California, Davis",
+      companylogo: require("./assets/images/UCD_logo.png"),
+      date: "April 2023 – June 2023",
+      desc: "Served as a Teaching Assistant for ECS 122B - Algorithm Design and Analysis under Prof. Setareh Rafatirad. In this role, my responsibilities were:",
+      descBullets: [
+        "Led engaging discussions for a diverse group of 120+ students, facilitating an interactive learning environment.",
+        "Proctored and meticulously graded exams to ensure accurate evaluation of student performance.",
+        "Developed challenging assignment questions to foster critical thinking and problem-solving skills.",
+        "Evaluated and provided constructive feedback on student assignments.",
+        "Conducted regular office hours, offering one-on-one support and guidance to students seeking further clarification.",
+        "Collaborated with the professor to enhance course materials and update instructional content for optimal student engagement."
+      ]
+    },
+  ]
+};
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
@@ -222,31 +265,41 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Technical Projects",
+  // subtitle: "SOME",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      image: require("./assets/images/MovCloud.png"),
+      projectName: "MovCloud: Movie ticketing system using AWS",
+      projectDesc: "Implemented a sophisticated cloud-based serverless movie ticketing system, utilizing 6 AWS Lambdas, 4 AWS SNS instances, DynamoDB, and AWS Step Functions. Leveraged the Saga design pattern to manage long-lived transactions and ensure seamless operations impeccably.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "http://saayahealth.com/"
+      //   }
+      //   //  you can add extra buttons here.
+      // ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
+      image: require("./assets/images/GuardianVision.png"),
+      projectName: "GuardianVision: AI-Powered Weapon Detection System",
+      projectDesc: "Created a computer vision system using Faster R-CNN and CNN to detect and classify weapons accurately. Evaluated and improved weapon recognition using state-of-the-art YOLOv7 with transfer learning.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "http://nextu.se/"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/WebGuard.png"),
+      projectName: "WebGuard: ML-Powered Malicious Website Detection",
+      projectDesc: "Developed machine learning models (Random Forest, XGBoost, GBM) to accurately classify websites as benign/malicious using 20+ features extracted from the website’s URL, and the best model achieved an accuracy of 0.889."
+    },
+    {
+      image: require("./assets/images/AutoAudit.png"),
+      projectName: "Automation of the internal audit process",
+      projectDesc: "Developed a full-stack web application for DRDO, automating the internal audit process and achieving a paperless environment, utilized by 250+ employees daily."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -256,9 +309,9 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Certifications 🏅"),
+  // subtitle:
+  //   "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
@@ -397,7 +450,7 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -408,6 +461,7 @@ export {
   educationInfo,
   techStack,
   workExperiences,
+  academicExperiences,
   openSource,
   bigProjects,
   achievementSection,
